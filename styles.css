@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body{
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+.modal{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width: 100% ;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.inner-modal{
+    position: relative;
+    width: 30vw;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px 15px 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+}
+label, .sub-btn{
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.sub-btn{
+    width: 50%;
+    margin: 10px auto 0px auto;
+    background-color: forestgreen;
+    padding: 5px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sub-btn:hover{
+    background-color: chartreuse;
+}
+
+.form-el, #note-text{
+    margin-top: 5px;
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.9);
+}
+#note-text{
+    /*width: 300px;*/
+    /*height: 300px;*/
+    margin: 10px auto 0 auto ;
+    background-color: bisque;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+    font-size: 1.3rem;
+    padding: 10px;
+}
+.inner-modal i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.5rem;
+    color: gray;
+}
+#add{
+    font-size: 2rem;
+    padding: 10px 30px;
+    border: 3px solid orange;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    color: orange;
+    margin-top: 2%;
+    margin-left: 75%;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+}
+#all_notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    overflow-wrap: break-word;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
+    font-size: 1rem;
+    font-family: "Monotype Corsiva";
+}
+.details{
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}

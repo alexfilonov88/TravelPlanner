@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="modal">
+    <form class="inner-modal">
+        <label for="from">From:</label>
+        <select class="form-el" name="from" id="from">
+            <option value="Haifa">Haifa</option>
+            <option value="Tel Aviv">Tel Aviv</option>
+            <option value="Eilat">Eilat</option>
+            <option value="Jerusalem">Jerusalem</option>
+        </select>
+        <label for="to">To:</label>
+        <input class="form-el" type="text" name="to" id="to" placeholder="Enter dist. point">
+        <label for="budget">Budget</label>
+        <input class="form-el" type="number" id="budget" name="budget">
+        <input class="form-el" type="date" name="date_from" placeholder="Date from">
+        <input class="form-el" type="date" name="date_to" placeholder="Date to">
+        <textarea class="form-el" name="note" id="note" maxlength="200"></textarea>
+        <input type="submit" value="Create Travel">
+        <i id="hide" class="fa-sharp fa-regular fa-circle-xmark"></i>
+    </form>
+</div>
+
+<main>
+    <button id="add">Add next Travel</button>
+    <div class="container">
+        <div id="all_notes"></div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
